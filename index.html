@@ -13,7 +13,11 @@
 
 <body>
     <div id="app">
-        {{ message }}
+        <ul v-if="emails.length == emailsN">
+            <li v-for="email in emails">
+                {{email}}
+            </li>
+        </ul>
     </div>
 
     <script>
